@@ -20,7 +20,7 @@ h1{
     font-size: 35px;
     font-style: normal;
     font-weight: bold;
-    color: rgb(201, 190, 44);
+    color: #54b3d6;
     text-align: center;
     text-decoration: dashed;
 }
@@ -55,7 +55,7 @@ h2{
 }
 button{
     display: inline-block;
-    color: rgb(121, 175, 220);
+    color: rgb(220, 209, 121);
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -115,8 +115,8 @@ button::before {
 }
 .middle{
     flex-direction: column;
-    margin-left: 0%;
-    margin-right: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 25px;
 }
 .text2{
