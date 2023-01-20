@@ -8,6 +8,8 @@ body{
 .h{
     font-style: oblique;
     color: #fff;
+    text-align: center;
+    align-content: center;
 }
 .button{
     font-size: larger;
@@ -93,11 +95,11 @@ transition: ease-in-out .5s,
 border-radius .5s;
 }
 
-.button *{
+.button:hover{
 position: absolute; 
 top: 50%;
 left: 50%;
-transform: translate(50%,50%);
+transform: scalex(1.50);
 transition: 25s;
 }
 

@@ -45,6 +45,7 @@ h1{
 }
 .container{
     display: flex;
+    align-content: space-between;
 } 
 h2{
     font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode';
@@ -136,11 +137,29 @@ button::before {
     
     background-color: rgb(26, 72, 157);
 }
+img{
+    margin-right: 10%;
+}
 section{
     display: flex;
     justify-content: center;
     
 }
+.bottom:hover > :not(:hover){
+    opacity: .4;
+}
+.img {
+	animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@keyframes img {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-180deg);
+    }
+  }
+  
 @media screen and (max-width: 600px) 
 {
     .background{
