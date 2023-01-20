@@ -1,0 +1,150 @@
+*{box-sizing: content-box;
+}
+body{
+    background-color: rgb(6, 22, 69); 
+}
+p{
+    color: white;
+}
+textarea{
+        width:45%;
+        padding: 12px;
+        border: 1px solid rgb(176, 122, 21);
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+h1{
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(201, 190, 44);
+    text-align: center;
+    text-decoration: underline;
+}
+h1{
+    box-shadow: inset 0 0 0  #54b3d6;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+h1:hover {
+    color: #fff;
+    box-shadow: inset 280px 0 0 0  #54b3d6;;
+}
+  
+h1{
+    color: #54b3d6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 57px;
+    font-weight: 700;
+    line-height: 2;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+} 
+h2{
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: #fff;
+    text-shadow: 10px;
+}
+button{
+    display: inline-block;
+    color: rgb(121, 175, 220);
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 16px 24px;
+    margin: 20px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    background: transparent;
+}
+button::before {
+    content: "";
+    position: absolute;
+    background: rgb(43, 44, 45);
+    height: 150;
+    width: 200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+ button:hover{
+    color: rgb(0, 0, 0);
+ }
+ button::before{
+    top: 100%;
+    left: 100%;
+    transition: 0.7s;
+ }
+ button:hover::before{
+    top: -30px;
+    left: -30px;
+ }
+ button:active::before{
+    color: aqua;
+    transition: 0s;
+ }
+.box{
+    font: caption;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(6, 22, 69);
+    display: flex;
+    justify-content: center;
+    margin-right:30px;
+    
+}
+.textarea{
+    display: flex;
+    height: fit-content;
+    gap: 25%;
+}
+.middle{
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 20%;
+    font-size: 25px;
+}
+.box1,.box2,.box3{
+    margin: 5% ;
+    padding: 5%;
+    height: 250px;
+    width: 150px;
+    border-style: outset;
+    border-color: black;
+    border-radius: 8px;
+    align-content: flex-start;
+    text-overflow: ellipsis;
+    flex-direction: column;
+    overflow: hidden;
+}
+.box1{
+    background-color: lightskyblue;
+}
+.box2{
+    
+    background-color: cornflowerblue;
+}
+.box3{
+    
+    background-color: rgb(26, 72, 157);
+}
+section{
+    display: flex;
+    justify-content: center;
+    
+}
+@media screen and (max-width: 600px) 
+{
+    .background{
+        width: 100%;
+        margin-top: 10;
+    }
+}
