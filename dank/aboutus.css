@@ -5,6 +5,7 @@ body{
 }
 p{
     color: white;
+    text-align: center;
 }
 textarea{
         width:45%;
@@ -21,7 +22,7 @@ h1{
     font-weight: bold;
     color: rgb(201, 190, 44);
     text-align: center;
-    text-decoration: underline;
+    text-decoration: dashed;
 }
 h1{
     box-shadow: inset 0 0 0  #54b3d6;
@@ -92,7 +93,10 @@ button::before {
     color: aqua;
     transition: 0s;
  }
-.box{
+ img{
+    margin-left: 40%;
+ }
+.box-main{
     font: caption;
     height: 200px;
     width: 200px;
@@ -105,13 +109,18 @@ button::before {
 .textarea{
     display: flex;
     height: fit-content;
-    gap: 25%;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .middle{
     flex-direction: column;
     margin-left: 0%;
-    margin-right: 20%;
+    margin-right: 50%;
     font-size: 25px;
+}
+.text2{
+    margin-left: 39%;
 }
 .box1,.box2,.box3{
     margin: 5% ;
@@ -119,10 +128,10 @@ button::before {
     height: 250px;
     width: 150px;
     border-style: outset;
-    border-color: black;
+    border-color: #fff;
     border-radius: 8px;
     align-content: flex-start;
-    text-overflow: ellipsis;
+    overflow: scroll ;
     flex-direction: column;
     overflow: hidden;
 }
@@ -140,9 +149,15 @@ button::before {
 img{
     margin-right: 10%;
 }
+.day1{
+    text-align: left;
+    font-size: 15px;
+    font-style: oblique Bold;
+}
 section{
     display: flex;
     justify-content: center;
+    grid-area: auto;
     
 }
 .bottom:hover > :not(:hover){
