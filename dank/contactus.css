@@ -119,6 +119,31 @@ background-color:#44c08a
     opacity: 1; 
     transition-delay: .5s
 }
+
+.contact-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(25, 50, 4, 0.471);
+    max-width: 700px;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.cc-container-1{
+    background-color: rgb(117, 219, 219);
+}
+.contact-info{
+   
+}
+span{
+    color: #fff;
+}
+a{
+    color: aquamarine;
+}
 @media screen and (max-width: 600px) 
 {
     .background{
