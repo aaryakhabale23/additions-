@@ -9,8 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
+
 body {
     flex-direction: column;
     background-color: rgb(6, 22, 69);
@@ -20,12 +21,14 @@ body {
     align-items: flex-start;
 
 }
-img {
+
+/* img {
     margin-right: 40%;
-}
+} */
 
 .logo-img {
     display: block;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     /* background-color: rgba(0, 0, 0, 0.064); */
@@ -49,7 +52,8 @@ h1 {
     line-height: 2;
     text-decoration: underline;
 }
-h1{
+
+h1 {
     padding: 12px;
     /* margin-top: 30%; */
     border-radius: 4px;
@@ -61,6 +65,7 @@ h1{
     font-weight: bold;
     text-align: center;
 }
+
 h1 {
     box-shadow: inset 0 0 0 0 0 #3badd2;
     color: #54b3d6;
@@ -84,12 +89,14 @@ h1:hover {
 }
 
 h2 {
-    font-family:  'Lucida Grande', 'Lucida Sans Unicode';
-    color: #fff;
+    font-family: 'KarmaticArcade', 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*  font-family:  'Lucida Grande', 'Lucida Sans Unicode'; */
+    color: rgb(0, 0, 0);
     text-shadow: 10px;
     font-size: 25px;
     align-items: center;
-    
+    text-align: center;
+
 }
 
 button {
@@ -113,26 +120,26 @@ button::before {
     background: rgb(43, 44, 45);
     height: 150;
     width: 200px;
-    border-radius: 50%;
+    border-radius: 5%;
     z-index: -1;
 }
 
-button:hover {
-    color: rgb(0, 0, 0);
+h2:hover {
+    color: rgb(255, 255, 255);
 }
 
-button::before {
+h2::before {
     top: 100%;
     left: 100%;
     transition: 0.7s;
 }
 
-button:hover::before {
+h2:hover::before {
     top: -30px;
     left: -30px;
 }
 
-button:active::before {
+h2:active::before {
     color: aqua;
     transition: 0s;
 }
@@ -149,20 +156,24 @@ button:active::before {
     margin-left: 37%;
 
 }
-.box-main {
+
+/* .box-main {
     min-height: 90vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/images/schedule.jpg);
     background-size: cover;
     background-position: center;
-}
+} */
 
 .middle {
     flex-direction: column;
     margin-left: 20%;
     margin-right: 20%;
     font-size: 20px;
+    background-color: #1ac08628;
+    border-radius: 12px;
 }
+
 .box1,
 .box2,
 .box3 {
@@ -195,10 +206,16 @@ button:active::before {
     flex-direction: column;
     justify-content: center;
     grid-area: auto;
+    min-height: 10vh;
+    border-radius: 10px;
+    background: linear-gradient(rgba(18, 134, 143, 0.5), rgba(134, 224, 178, 0.5)), url(/assets/images/schedule.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
+
 .section3 {
-    min-height: auto;
+    height: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -209,12 +226,9 @@ button:active::before {
 .bottom:hover> :not(:hover) {
     opacity: .4;
 }
-.bottom{
-    display: flex;
-}
 
-img{
-    animation-play-state: running 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+.bottom {
+    display: flex;
 }
 
 @font-face {
@@ -222,7 +236,32 @@ img{
     src: url("ka1.ttf");
 }
 
-@keyframes img {
+.child {
+    animation: left-to-right 2s ease-in-out infinite alternate;
+    /* transition: transform 1s ease-in-out; */
+}
+
+.parent:hover .child {
+    animation-play-state: paused
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translatex(0);
+    }
+
+    100% {
+        transform: translatex(100);
+
+    }
+}
+
+/* 
+img{
+    animation-play-state: running 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+} */
+/* 
+@keyframes animation-play-state {
     0% {
         transform: rotateX(0);
     }
@@ -230,7 +269,7 @@ img{
     100% {
         transform: rotateX(-180deg);
     }
-}
+} */
 
 @media screen and (max-width: 600px) {
     .background {
@@ -241,16 +280,134 @@ img{
 
 
 /*  */
-/* @media (max-width: 991.98px) {
-    .section{
-        min-height: 100vh;
-        background: linear-gradient(rgba(79, 12, 12, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/schedule.jpg);
+/*  */@media (max-width: 991.98px) {
+    .section3 {
+        min-height: 10vh;
+        border-radius: 10px;
+        background: linear-gradient(rgba(18, 134, 143, 0.5), rgba(134, 224, 178, 0.5)), url(/assets/images/schedule.jpg);
         background-size: cover;
         background-position: center;
+
     }
-} */
+}
 
+/* Styling the three events section */
+section .events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    box-sizing: border-box;
+}
 
+/* Styling the links of
+the events section */
+section .events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
 
+/* Styling the lists of the event section */
+section .events ul li {
+    list-style: none;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
 
+/* Styling the time class of events section */
+.events ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #1ac085;
+    box-sizing: border-box;
+    width: 30%;
+    height: 1o0%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
 
+/* Styling the hover effect
+    of events section */
+.events ul li:hover .time {
+    background: #072d5c;
+}
+
+/* Styling the header of time
+    class of events section */
+s.events ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    line-height: 30px;
+}
+
+/* Styling the texts of time
+class of events section */
+.events ul li .time h2 span {
+    font-size: 30px;
+}
+
+/* Styling the details
+class of events section */
+.events ul li .details {
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+/* Styling the header of the
+details class of events section */
+.events ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+/* Styling the lists of details
+class of events section */
+.events ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Styling the links of details
+class of events section */
+.events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1.5px solid #ffffff;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+/* Styling the details class's hover effect */
+.events ul li .details a:hover {
+    background: #444196;
+    color: #fff;
+    border-color: #ffffff;
+    border-radius: 8px;
+}
+li{
+}
