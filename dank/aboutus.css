@@ -22,10 +22,6 @@ body {
 
 }
 
-/* img {
-    margin-right: 40%;
-} */
-
 .logo-img {
     display: block;
     margin-top: 2%;
@@ -283,19 +279,19 @@ img{
 }
 
 
-/*  */
-/*  */@media (max-width: 991.98px) {
+
+@media (max-width: 991.98px) {
     .section3 {
         min-height: 10vh;
         border-radius: 10px;
-        background: linear-gradient(rgba(18, 134, 143, 0.5), rgba(134, 224, 178, 0.5)), url(/assets/images/schedule.jpg);
+        background: linear-gradient(rgba(18, 134, 143, 0.5), rgba(134, 224, 178, 0.5));
         background-size: cover;
         background-position: center;
 
     }
 }
 
-/* Styling the three events section */
+
 section .events {
     position: relative;
     width: 50%;
@@ -305,8 +301,6 @@ section .events {
     box-sizing: border-box;
 }
 
-/* Styling the links of
-the events section */
 section .events ul {
     position: absolute;
     top: 50%;
@@ -316,7 +310,6 @@ section .events ul {
     box-sizing: border-box;
 }
 
-/* Styling the lists of the event section */
 section .events ul li {
     list-style: none;
     background: rgb(255, 255, 255);
@@ -325,7 +318,7 @@ section .events ul li {
     margin: 15px 0;
 }
 
-/* Styling the time class of events section */
+
 .events ul li .time {
     position: relative;
     padding: 20px;
@@ -338,16 +331,14 @@ section .events ul li {
     transition: .5s;
 }
 
-/* Styling the hover effect
-    of events section */
+
 .events ul li:hover .time {
     background: rgb(132, 195, 148);
 
     /* background: #4d76a9; */
 }
 
-/* Styling the header of time
-    class of events section */
+
 s.events ul li .time h2 {
     position: absolute;
     margin: 0;
@@ -360,14 +351,11 @@ s.events ul li .time h2 {
     line-height: 30px;
 }
 
-/* Styling the texts of time
-class of events section */
+
 .events ul li .time h2 span {
     font-size: 30px;
 }
 
-/* Styling the details
-class of events section */
 .events ul li .details {
     padding: 20px;
     background: rgb(132, 195, 148);
@@ -377,8 +365,7 @@ class of events section */
     float: left;
 }
 
-/* Styling the header of the
-details class of events section */
+
 .events ul li .details h3 {
     position: relative;
     margin: 0;
@@ -386,8 +373,7 @@ details class of events section */
     font-size: 22px;
 }
 
-/* Styling the lists of details
-class of events section */
+
 .events ul li .details p {
     position: relative;
     margin: 10px 0 0;
@@ -395,8 +381,7 @@ class of events section */
     font-size: 16px;
 }
 
-/* Styling the links of details
-class of events section */
+
 .events ul li .details a {
     display: inline-block;
     text-decoration: none;
@@ -408,7 +393,7 @@ class of events section */
     transition: .5s;
 }
 
-/* Styling the details class's hover effect */
+
 .events ul li .details a:hover {
     background: #444196;
     color: #fff;
