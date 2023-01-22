@@ -165,11 +165,12 @@ h2:active::before {
 .middle {
     padding: 5px;
     flex-direction: column;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 20px;
-    background-color: #1ac08628;
+    background-color: #1ac08610;
     border-radius: 12px;
+    text-align: center;
 }
 .article{
     padding: 5px;
@@ -322,7 +323,7 @@ section .events ul li {
 .events ul li .time {
     position: relative;
     padding: 20px;
-    background: rgb(6, 22, 69);
+    border-radius: 0% 25%;
     box-sizing: border-box;
     width: 30%;
     height: 100%;
@@ -333,7 +334,7 @@ section .events ul li {
 
 
 .events ul li:hover .time {
-    background: rgb(132, 195, 148);
+    background: rgb(7, 32, 66);
 
     /* background: #4d76a9; */
 }
@@ -358,7 +359,7 @@ s.events ul li .time h2 {
 
 .events ul li .details {
     padding: 20px;
-    background: rgb(132, 195, 148);
+    
     box-sizing: border-box;
     width: 70%;
     height: 100%;
@@ -399,4 +400,7 @@ s.events ul li .time h2 {
     color: #fff;
     border-color: #b5b5b5;
     border-radius: 8px;
+}
+.events{
+    background-color: #3badd2;
 }
