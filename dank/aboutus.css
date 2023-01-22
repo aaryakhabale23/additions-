@@ -334,7 +334,7 @@ section .events ul li {
 
 
 .events ul li:hover .time {
-    background: rgb(7, 32, 66);
+    background: rgb(10, 52, 111);
 
     /* background: #4d76a9; */
 }
@@ -396,7 +396,7 @@ s.events ul li .time h2 {
 
 
 .events ul li .details a:hover {
-    background: #444196;
+    background: #116156;
     color: #fff;
     border-color: #b5b5b5;
     border-radius: 8px;
